@@ -1,0 +1,8 @@
+package merboxel.patterns.creational.abstractfactory;
+
+public class Runner {
+
+    public static void main(String... args) {
+
+    }
+}
