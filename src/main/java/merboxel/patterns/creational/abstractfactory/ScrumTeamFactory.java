@@ -8,6 +8,12 @@ public class ScrumTeamFactory {
 
     private ScrumTeamAbstractFactory factory;
 
+    public ScrumTeamFactory() {}
+
+    public ScrumTeamFactory(ScrumTeamAbstractFactory factory) {
+        this.factory = factory;
+    }
+
     public ProductOwner createProductOwner(String name) {
         return getFactory().createProductOwner(name);
     }
@@ -37,7 +43,7 @@ public class ScrumTeamFactory {
         return factory;
     }
 
-    TeamType getFromConfig() {
+    private TeamType getFromConfig() {
         return TeamType.A;
     }
 }
